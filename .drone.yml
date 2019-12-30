@@ -5,6 +5,7 @@ steps:
 - name: frontend
   image: adoptopenjdk/maven-openjdk11
   commands:
+  - unset MAVEN_CONFIG
   - ./mvnw package 
 - name: docker  
   image: plugins/docker
