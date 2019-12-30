@@ -1,3 +1,9 @@
+# Quarkus Sandbox
+
+Sandbox applicaton for playing with Quarkus.
+
+[![Build Status](https://cloud.drone.io/api/badges/toaler/quarkus-sandbox/status.svg)](https://cloud.drone.io/toaler/quarkus-sandbox)
+
 # getting-started project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
