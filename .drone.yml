@@ -9,9 +9,10 @@ steps:
   - whoami
   - pwd
   - ls -lrt
+  - cd
+  - cp /drone/src/ $HOME
+  - ls -lrt
   - pwd
-  - su - quarkus
-  - whoami
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
 - name: docker  
