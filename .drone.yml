@@ -5,6 +5,7 @@ steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
+  - ls -lrt
   - cd $HOME
   - ls -lrt
   - unset MAVEN_CONFIG
