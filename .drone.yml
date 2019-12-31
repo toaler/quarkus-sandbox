@@ -8,6 +8,7 @@ workspace:
 steps:
 - name: frontend
   image: quay.io/quarkus/ubi-quarkus-native-image:19.2.1
+  user: root
   commands:
   - whoami
   - pwd
