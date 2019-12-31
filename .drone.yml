@@ -9,15 +9,10 @@ steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
-  - cat /etc/passwd
+  - su - root
   - whoami
   - pwd
   - ls -lrt
-  - cd
-  - cp -R /drone/src/ ~/
-  - cd ~/src
-  - ls -lrt
-  - pwd
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
   - ls -lrt /home/quarkus/src/target
