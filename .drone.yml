@@ -16,6 +16,7 @@ steps:
   - pwd
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
+  - ls -lrt /home/quarkus/src/target
 - name: docker  
   image: plugins/docker
   settings:
