@@ -11,8 +11,7 @@ steps:
   commands:
   - whoami
   - pwd
-  - ls -lrta
-  - cd src
+  - mkdir ~/.m2
   - ls -lrta
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
