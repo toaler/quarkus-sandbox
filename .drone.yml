@@ -9,7 +9,6 @@ steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
-  - su - root
   - whoami
   - pwd
   - ls -lrt
