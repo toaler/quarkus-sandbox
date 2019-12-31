@@ -5,6 +5,8 @@ steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
+  - cd $HOME
+  - ls -lrt
   - unset MAVEN_CONFIG
   - ./mvnw package 
 - name: docker  
