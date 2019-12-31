@@ -6,10 +6,13 @@ steps:
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
   - ls -lrt
-  - cd $HOME
+  - pwd
+  - chown -R quarkus .
   - ls -lrt
+  - su - quarkus
+  - whoami
   - unset MAVEN_CONFIG
-  - ./mvnw package 
+  - ./mvnw -Pnative package 
 - name: docker  
   image: plugins/docker
   settings:
