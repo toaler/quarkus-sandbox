@@ -1,10 +1,6 @@
 kind: pipeline
 name: default
 
-workspace:
-  base: /home/
-  path: quarkus
-
 steps:
 - name: frontend
   image: quay.io/quarkus/ubi-quarkus-native-image:19.2.1
@@ -15,7 +11,6 @@ steps:
   - ls -lrta
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
-  - ls -lrt /home/quarkus/src/target
 - name: docker  
   image: plugins/docker
   settings:
