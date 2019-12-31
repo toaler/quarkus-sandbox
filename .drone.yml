@@ -11,6 +11,7 @@ steps:
   - ls -lrt
   - cd
   - cp -R /drone/src/ ~/
+  - cd ~/src
   - ls -lrt
   - pwd
   - unset MAVEN_CONFIG
