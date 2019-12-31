@@ -11,7 +11,7 @@ steps:
   commands:
   - whoami
   - pwd
-  - ls -lrt
+  - ls -lrta
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
   - ls -lrt /home/quarkus/src/target
