@@ -7,7 +7,7 @@ steps:
   commands:
   - ls -lrt
   - pwd
-  - chown -R quarkus .
+  - chown -R quarkus src 
   - ls -lrt
   - su - quarkus
   - whoami
