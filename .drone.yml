@@ -7,11 +7,10 @@ workspace:
 
 steps:
 - name: frontend
-  image: quay.io/quarkus/centos-quarkus-maven:19.2.1
+  image: quay.io/quarkus/ubi-quarkus-native-image:19.2.1
   commands:
   - whoami
   - pwd
-  - mkdir ~/.m2
   - ls -lrta
   - unset MAVEN_CONFIG
   - ./mvnw -Pnative package 
