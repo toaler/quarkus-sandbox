@@ -20,6 +20,7 @@ steps:
   image: plugins/docker
   settings:
     repo: toaler/quarkus-sandbox
+    dockerfile: Dockerfile.native
     tags:
      - '0.1'
     username:
