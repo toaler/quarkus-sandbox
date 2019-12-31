@@ -5,6 +5,9 @@ steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
   commands:
+  - cat /etc/passwd
+  - whoami
+  - pwd
   - ls -lrt
   - pwd
   - chown -R quarkus src 
