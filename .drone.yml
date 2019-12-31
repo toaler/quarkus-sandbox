@@ -1,6 +1,10 @@
 kind: pipeline
 name: default
 
+workspace:
+  base: /home/quarkus
+  path: src
+
 steps:
 - name: frontend
   image: quay.io/quarkus/centos-quarkus-maven:19.2.1
